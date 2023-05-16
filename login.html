@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- Folha de estilos personalizada -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style-form.css">
+
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+  <link rel="stylesheet" href="fontawesome/css/brands.css">
+
+  <title>Login - Tingo</title>
+</head>
+
+<body id="login">
+
+  <header><!-- Início header -->
+    <nav class="navbar navbar-expand-sm navbar-principal navbar-light">
+
+      <div class="container">
+
+        <a href="index.html">
+          <img src="imgs/logo.png" alt="logo" width="200">
+        </a>
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+          <i class="fa-solid fa-bars text-white"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav-principal">
+          <ul class="navbar-nav ml-auto text-white">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Produtos</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Saiba mais</a></li>
+
+            <li class="nav-item barra"></li>
+
+            <li class="nav-item"><a href="login.html" class="nav-link"><span class="login"><i class="fa-solid fa-user"></span></i></a></li>
+
+            <li class="nav-item"><a href="" class="nav-link"><i class="fa-solid fa-cart-shopping icon-nav"></i></a></li>
+          </ul>
+        </div>
+
+      </div>
+
+    </nav>
+  </header><!--/ Fim header -->
+
+  <div class="base"><!-- Início base -->
+    <form action="login.php" method="GET">
+      <fieldset>
+
+        <h3>Faça seu login</h3>
+
+        <div class="inputBox">
+          <input type="text" name="email" id="email" class="inputUser" required>
+          <label for="nome" class="labelInput">Email:</label>
+        </div>
+
+        <br><br>
+
+        <div class="inputBox">
+          <input type="password" name="senha" id="senha" class="inputUser" required>
+          <label for="senha" class="labelInput">Senha:</label>
+        </div>
+
+        <br>
+
+        <p class="semCadastro">Não tem login? <a href="cadastro.html">Inscreva-se</a></p>
+
+        <br>
+
+        <input type="submit" class="botao">
+
+      </fieldset>
+    </form>
+  </div><!-- Fim base -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+}
+
+body { 
+    background: url(../imgs/fundo\ azulnovo.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ----- Header ----- */
+header {
+    position: fixed;
+    background: #01154D;
+    width: 100%;
+    padding: 15px 0;
+    top: 0;
+    z-index: 1;
+}
+
+.barra {
+    width: 1px;
+    background-color: #fff;
+    margin: 11px 15px;
+}
+
+.login {
+  margin-right: 2px;
+} 
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link .icon-nav {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link .fa-cart-shopping:hover {
+    color: #5DE888;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #5DE888;
+}
+
+
+button.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+/* ----- Capa ----- */
+#home {
+    margin-top: 20%;
+}
+
+.capa {
+    text-align: center;
+}
+  
+  .custom-button {
+    color: white;
+    border-radius: 400px;
+    -webkit-border-radius: 400px;
+    -moz-border-radius: 400px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 20px;
+  }
+  
+  .purple-btn {
+    background: #7c25f8;
+  }
+
+  .purple-btn:hover {
+    background: #6207e3;
+    color: #fff;
+  }
+  
+  .white-btn {
+    border: 2px solid #010142;
+    color: #010142
+  }
+
+  .carousel-control {
+    color: #010142;
+    font-size: 3rem;
+  }
+  
+  .white-btn:hover {
+    background: #010142;
+    color: #fff;
+  }
+
+  .white-btn:hover ~ .fa-cart-shopping {
+      color: #000;
+  }
+
+  /* ------- Servicos ------- */
+  #servicos {
+    margin-top: 25rem;
+    padding: 30px;
+    height: 100%;
+  }
+
+  #servicos h2 {
+    color: #330D80;
+  }
+
+  #servicos img {
+    width: 250px;
+    height: 200px;
+  }
+
+  #servicos .imgs-servicos {
+    padding: 20px 0;
+  }
+
+  /* ------- Recursos ------- */
+  #recursos {
+    margin-top: 3rem;
+    color: #01154D;
+  }
+
+  #recursos .card {
+    cursor: pointer;
+    width: 18rem;
+    box-shadow: 0 0 5px 0 #e2e2e2;
+  }
+
+  /* ------- Rodapé ------- */
+  footer {
+    margin-top: 90px;
+    padding: 30px;
+    background: #000;
+  }
+
+  footer img#logo {
+    width: 180px;
+    margin-top: 25px;
+  }
+
+  #rodape h4 {
+    color: #919496;
+    font-size: .8em;
+    text-transform: uppercase;
+  }
+
+  #rodape .navbar-nav a {
+    color: #fff;
+    font-size: 0.8em;
+  }
+
+  #rodape .navbar-nav a:hover {
+    color: #7D58C7;
+    text-decoration: none;
+  }
+
+  /* ------- Tipografia ------- */
+
+h1 {
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+    color: #010142;
+}
+  
+h2 {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.04;
+    color: #010142;
+}
+  
+h3 {
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.04;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.2;
+}
