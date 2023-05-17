@@ -27,7 +27,7 @@ header {
     margin: 11px 15px;
 }
 
-.login {
+.login, .logged {
   margin-right: 2px;
 } 
 

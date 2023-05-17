@@ -8,44 +8,12 @@ h1 {
   text-align: center;
 }
 
-/* ----- Header ----- */
-header {
-  background: #01154D;
-  width: 100%;
-  padding: 15px 0;
-  top: 0;
-}
-
-.barra {
-  width: 1px;
-  background-color: #fff;
-  margin: 11px 15px;
-}
-
-.login {
-margin-right: 2px;
-} 
-
-.navbar-light .navbar-nav .nav-link {
-  color: #fff;
-}
-
-.navbar-light .navbar-nav .nav-link .icon-nav {
-  color: #fff;
-}
-
-.navbar-light .navbar-nav .nav-link .fa-cart-shopping:hover {
-  color: #5DE888;
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
-  color: #5DE888;
-}
-
-
-button.navbar-toggler {
-  border: none;
-  outline: none;
+/* ----- Logo ----- */
+.logo-form {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 250px;
 }
 
 /* ----- Container ----- */
@@ -53,7 +21,7 @@ button.navbar-toggler {
   border-radius: 10px;
   padding: 60px 120px;
   margin-left: 50%;
-  margin-top: 28%;
+  margin-top: 24%;
   background-color: #011E36;
   transform: translate(-50%, -50%);
   border-radius: 50px 10px 50px 10px;

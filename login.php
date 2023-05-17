@@ -17,6 +17,9 @@
     $email = filter_input(INPUT_GET, 'email');
     $senha = filter_input(INPUT_GET, 'senha');
 
+    // Criando a seção
+    session_start();
+
     // Cria uma consulta SQL para buscar o usuário no banco de dados
     $sql = "SELECT * FROM usuario WHERE email='$email'";
 
@@ -31,12 +34,14 @@
 
         // Compara a senha fornecida pelo usuário com a senha do usuário no banco de dados
         if ($senha != $row['senha']) {
-            echo "senha incorreta";
-        } else {
-            echo "senha correta";
+            echo 'senha errada';
+        } 
+        else {
+            $_SESSION['email'] = $email;
+            header('Location: index.php');
         }
     } else {
-        echo "usuario correto";
+        echo 'email errado';
     }
 
     // Fecha a conexão com o banco de dados
