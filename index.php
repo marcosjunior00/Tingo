@@ -23,7 +23,7 @@
   <title>Tingo</title>
 
   <?php
-    
+
     include 'login.php';
 
   ?>
@@ -49,9 +49,9 @@
 
           <div class="collapse navbar-collapse" id="nav-principal">
             <ul class="navbar-nav ml-auto text-white">
-              <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-              <li class="nav-item"><a href="" class="nav-link">Produtos</a></li>
-              <li class="nav-item"><a href="" class="nav-link">Saiba mais</a></li>
+              <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="products.php" class="nav-link">Produtos</a></li>
+              <li class="nav-item"><a href="more.php" class="nav-link">Saiba mais</a></li>
 
               <li class="nav-item barra"></li>
 
@@ -61,10 +61,11 @@
                 <?php 
                   if (isset($_SESSION["email"]))
                   {
-                    echo '<a href="./pages/profile.php" class="nav-link"><span class="logged">'. $_SESSION['email'] .'</span></a>';
+                    echo '<a href="./pages/profile.php" class="nav-link"><span class="logged">'. ucwords($_SESSION['nome']) .'</span></a>';
                   } 
                   else 
                   {
+                    session_destroy();
                     echo '<a href="login.html" class="nav-link"><span class="login"><i class="fa-solid fa-user"></i></span></a>';
                   }
                 ?>
@@ -217,6 +218,10 @@
     <div class="container">
       <div class="row">
 
+        <div class="col-md-1">
+          .
+        </div>
+
         <div class="col-md-2">
           <img src="imgs/logo.png" alt="logo" id="logo">
         </div>
@@ -253,7 +258,7 @@
 
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-3 d-flex flex-column">
           <h4>redes sociais</h4>
           <ul class="navbar-nav">
             <li>

@@ -1,5 +1,7 @@
 <?php 
-    // Define as variáveis ​​de conexão com o banco de dados
+    session_start();
+
+// Define as variáveis ​​de conexão com o banco de dados
     $servername = "localhost";
     $username = "root";
     $password = "";
@@ -18,7 +20,6 @@
     $senha = filter_input(INPUT_GET, 'senha');
 
     // Criando a seção
-    session_start();
 
     // Cria uma consulta SQL para buscar o usuário no banco de dados
     $sql = "SELECT * FROM usuario WHERE email='$email'";
@@ -38,6 +39,7 @@
         } 
         else {
             $_SESSION['email'] = $email;
+            $_SESSION['nome'] = $row['nome'];
             header('Location: index.php');
         }
     } else {
