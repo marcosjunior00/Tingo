@@ -1,189 +1,217 @@
-html, body {
-    overflow-x: hidden;
-    height: 100%;
+html,
+body {
+  overflow-x: hidden;
+  height: 100%;
 }
 
-body { 
-    background: url(../imgs/fundo\ azulnovo.png);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: Arial, Helvetica, sans-serif;
+body {
+  background: url(../imgs/fundo\ azulnovo.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* ----- Header ----- */
 header {
-    position: fixed;
-    background: #01154D;
-    width: 100%;
-    padding: 15px 0;
-    top: 0;
-    z-index: 1;
+  position: fixed;
+  background: #01154D;
+  width: 100%;
+  padding: 15px 0;
+  top: 0;
+  z-index: 1;
 }
 
 .barra {
-    width: 1px;
-    background-color: #fff;
-    margin: 11px 15px;
+  width: 1px;
+  background-color: #fff;
+  margin: 11px 15px;
 }
 
-.login, .logged {
+.login,
+.logged {
   margin-right: 2px;
-} 
+}
 
 .navbar-light .navbar-nav .nav-link {
-    color: #fff;
+  color: #fff;
 }
 
 .navbar-light .navbar-nav .nav-link .icon-nav {
-    color: #fff;
+  color: #fff;
 }
 
 .navbar-light .navbar-nav .nav-link .fa-cart-shopping:hover {
-    color: #5DE888;
+  color: #5DE888;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #5DE888;
+  color: #5DE888;
 }
 
 
 button.navbar-toggler {
-    border: none;
-    outline: none;
+  border: none;
+  outline: none;
 }
 
 /* ----- Capa ----- */
 #home {
-    margin-top: 20%;
+  margin-top: 20%;
 }
 
 .capa {
-    text-align: center;
+  text-align: center;
 }
-  
-  .custom-button {
-    color: white;
-    border-radius: 400px;
-    -webkit-border-radius: 400px;
-    -moz-border-radius: 400px;
-    text-transform: uppercase;
-    transition: background 0.4s, color 0.4s;
-    padding: 10px 20px;
-  }
-  
-  .purple-btn {
-    background: #7c25f8;
-  }
 
-  .purple-btn:hover {
-    background: #6207e3;
-    color: #fff;
-  }
-  
-  .white-btn {
-    border: 2px solid #010142;
-    color: #010142
-  }
+.custom-button {
+  color: white;
+  border-radius: 400px;
+  -webkit-border-radius: 400px;
+  -moz-border-radius: 400px;
+  text-transform: uppercase;
+  transition: background 0.4s, color 0.4s;
+  padding: 10px 20px;
+}
 
-  .carousel-control {
-    color: #010142;
-    font-size: 3rem;
-  }
-  
-  .white-btn:hover {
-    background: #010142;
-    color: #fff;
-  }
+.purple-btn {
+  background: #7c25f8;
+}
 
-  .white-btn:hover ~ .fa-cart-shopping {
-      color: #000;
-  }
+.purple-btn:hover {
+  background: #6207e3;
+  color: #fff;
+}
 
-  /* ------- Servicos ------- */
-  #servicos {
-    margin-top: 25rem;
-    padding: 30px;
-    height: 100%;
-  }
+.white-btn {
+  border: 2px solid #010142;
+  color: #010142
+}
 
-  #servicos h2 {
-    color: #330D80;
-  }
+.carousel-control {
+  color: #010142;
+  font-size: 3rem;
+}
 
-  #servicos img {
-    width: 250px;
-    height: 200px;
-  }
+.white-btn:hover {
+  background: #010142;
+  color: #fff;
+}
 
-  #servicos .imgs-servicos {
-    padding: 20px 0;
-  }
+.white-btn:hover~.fa-cart-shopping {
+  color: #000;
+}
 
-  /* ------- Recursos ------- */
-  #recursos {
-    margin-top: 3rem;
-    color: #01154D;
-  }
+/* ------- Servicos ------- */
+#servicos {
+  margin-top: 25rem;
+  padding: 30px;
+  height: 100%;
+}
 
-  #recursos .card {
-    cursor: pointer;
-    width: 18rem;
-    box-shadow: 0 0 5px 0 #e2e2e2;
-  }
+#servicos h2 {
+  color: #330D80;
+}
 
-  /* ------- Rodapé ------- */
-  footer {
-    margin-top: 90px;
-    padding: 30px;
-    background: #000;
-  }
+#servicos img {
+  width: 250px;
+  height: 200px;
+}
 
-  footer img#logo {
-    width: 180px;
-    margin-top: 25px;
-  }
+#servicos .imgs-servicos {
+  padding: 20px 0;
+}
 
-  #rodape h4 {
-    color: #919496;
-    font-size: .8em;
-    text-transform: uppercase;
-  }
+/* ------- Recursos ------- */
+#recursos {
+  margin-top: 3rem;
+  color: #01154D;
+}
 
-  #rodape .navbar-nav a {
-    color: #fff;
-    font-size: 0.8em;
-  }
+#recursos .card {
+  cursor: pointer;
+  width: 18rem;
+  box-shadow: 0 0 5px 0 #e2e2e2;
+}
 
-  #rodape .navbar-nav a:hover {
-    color: #7D58C7;
-    text-decoration: none;
-  }
+/* ------- Rodapé ------- */
+footer {
+  margin-top: 90px;
+  padding: 30px;
+  background: #000;
+}
 
-  /* ------- Tipografia ------- */
+footer img#logo {
+  width: 180px;
+  margin-top: 25px;
+}
+
+#rodape h4 {
+  color: #919496;
+  font-size: .8em;
+  text-transform: uppercase;
+}
+
+#rodape .navbar-nav a {
+  color: #fff;
+  font-size: 0.8em;
+}
+
+#rodape .navbar-nav a:hover {
+  color: #7D58C7;
+  text-decoration: none;
+}
+
+/* ------- Tipografia ------- */
 
 h1 {
-    font-weight: 900;
-    letter-spacing: -0.05em;
-    margin-bottom: 50px;
-    color: #010142;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  margin-bottom: 50px;
+  color: #010142;
 }
-  
+
 h2 {
-    font-size: 3em;
-    font-weight: 700;
-    letter-spacing: -0.04;
-    color: #010142;
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: -0.04;
+  color: #010142;
 }
-  
+
 h3 {
-    font-size: 2em;
-    font-weight: 700;
-    letter-spacing: -0.04;
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: -0.04;
 }
 
 h4 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    letter-spacing: -0.2;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.2;
+}
+
+/* ------- Produtos ------- */
+
+#products {
+  margin-top: 10%;
+}
+
+.product-container {
+  padding: 15px 20px 5px 20px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.product-container:hover {
+  background-color: #01154D;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.description {
+  font-size: small;
 }
