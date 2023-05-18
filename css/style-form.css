@@ -21,10 +21,13 @@ h1 {
   border-radius: 10px;
   padding: 60px 120px;
   margin-left: 50%;
-  margin-top: 24%;
   background-color: #011E36;
   transform: translate(-50%, -50%);
   border-radius: 50px 10px 50px 10px;
+}
+
+#login .base {
+  margin-top: 24%;
 }
 
 h3 {
@@ -62,6 +65,18 @@ h3 {
   top: -20px;
   font-size: 12px;
   color: #fff;
+}
+
+.labelSelect {
+  top: -10px;
+}
+
+option {
+  background-color: #001627;
+}
+
+option:hover {
+  background-color: #001d33;
 }
 
 .semCadastro {

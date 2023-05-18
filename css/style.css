@@ -190,6 +190,12 @@ h4 {
   letter-spacing: -0.2;
 }
 
+/* ------- Cadastro ------- */
+
+#cadastro .base {
+  margin-top: 38%;
+}
+
 /* ------- Produtos ------- */
 
 #products {

@@ -24,7 +24,7 @@
   <title>Login - Tingo</title>
 </head>
 
-<body id="login">
+<body id="cadastro">
 
   <a href="index.php"><img src="imgs/logo.png" alt="Tingo" class="logo-form"></a>
 
@@ -35,22 +35,54 @@
         <h3>Faça seu cadastro</h3>
 
         <div class="inputBox">
-          <input type="text" name="nome" class="inputUser" required>
+          <input type="text" name="nome" id="nome" class="inputUser" required>
           <label for="nome" class="labelInput">Nome:</label>
         </div>
 
         <br><br>
 
         <div class="inputBox">
-          <input type="text" name="email" class="inputUser" required>
+          <input type="text" name="lastName" id="lastName" class="inputUser" required>
+          <label for="lastName" class="labelInput">Sobrenome:</label>
+        </div>
+
+        <br><br>
+
+        <div class="inputBox">
+          <input type="text" name="email" id="email" class="inputUser" required>
           <label for="email" class="labelInput">Email:</label>
         </div>
 
         <br><br>
 
         <div class="inputBox">
-          <input type="password" name="senha" class="inputUser" required>
+          <input type="password" name="senha" id="senha" class="inputUser" required>
           <label for="senha" class="labelInput">Senha:</label>
+        </div>
+
+        <br><br>
+
+        <div class="inputBox">
+          <input type="password" name="ConfSenha" id="ConfSenha" class="inputUser" required>
+          <label for="ConfSenha" class="labelInput">Confirme a senha:</label>
+        </div>
+
+        <br><br>
+
+        <div class="inputBox">
+          <input type="text" name="cpf" id="cpf" class="inputUser" pattern="^[0-9]{3}.?[0-9]{3}.?[0-9]{3}-?[0-9]{2}" required>
+          <label for="cpf" class="labelInput">CPF:</label>
+        </div>
+
+        <br><br>
+
+        <div class="inputBox selectBox">
+          <label for="genero" class="labelSelect">Gênero:</label>
+          <select name="genero" id="genero" class="inputUser">
+            <option value=""></option>
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+          </select>
         </div>
 
         <br>
