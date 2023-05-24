@@ -1,25 +1,13 @@
 <?php 
+    // Criando a seção
     session_start();
 
-// Define as variáveis ​​de conexão com o banco de dados
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "tingo";
-
-    // Cria uma conexão com o banco de dados
-    $conn = new mysqli($servername, $username, $password, $dbname);
-
-    // Verifica se houve erro na conexão
-    if ($conn->connect_error) {
-        die("Falha na conexão: " . $conn->connect_error);
-    }
+    // Fazendo a conexão
+    include 'conexao.php';
 
     // Define o nome de usuário e a senha que foram fornecidos pelo usuário
     $email = filter_input(INPUT_GET, 'email');
     $senha = filter_input(INPUT_GET, 'senha');
-
-    // Criando a seção
 
     // Cria uma consulta SQL para buscar o usuário no banco de dados
     $sql = "SELECT * FROM usuario WHERE email='$email'";
