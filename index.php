@@ -32,7 +32,7 @@
 
 <body>
 
-  <div class="body">
+  <div>
 
     <header><!-- Início header -->
       <nav class="navbar navbar-expand-sm navbar-principal navbar-light">
@@ -40,7 +40,7 @@
         <div class="container">
 
           <a href="index.php">
-            <img src="imgs/logo.png" alt="logo" width="200">
+            <img src="imgs/logo.png" alt="logo" width="70">
           </a>
 
           <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">

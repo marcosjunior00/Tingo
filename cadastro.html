@@ -21,87 +21,118 @@
   <link rel="stylesheet" href="fontawesome/css/all.css">
   <link rel="stylesheet" href="fontawesome/css/brands.css">
 
-  <title>Login - Tingo</title>
+  <title>Cadastro - Tingo</title>
 </head>
 
 <body id="cadastro">
 
-  <a href="../site/index.php"><img src="imgs/logo.png" alt="Tingo" class="logo-form"></a>
+  <div class="row container">
 
-  <div class="base"><!-- Início base -->
-    <form action="cadastro.php" method="GET">
-      <fieldset>
+    <div class="col-md-7">
+      <form action="cadastro.php" method="GET">
+        <fieldset>
+  
+          <h3>Cadastre-se</h3>
+  
+          <div class="row">
 
-        <h3>Faça seu cadastro</h3>
+            <div class="col-md-6">
+              <div class="inputBox">
+                <input type="text" name="nome" id="nome" class="inputUser" required>
+                <label for="nome" class="labelInput">Nome:</label>
+              </div>
+            </div>
 
-        <div class="inputBox">
-          <input type="text" name="nome" id="nome" class="inputUser" required>
-          <label for="nome" class="labelInput">Nome:</label>
-        </div>
+            <div class="col-md-6">
+              <div class="inputBox">
+                <input type="text" name="lastName" id="lastName" class="inputUser" required>
+                <label for="lastName" class="labelInput">Sobrenome:</label>
+              </div>
+            </div>
 
-        <br><br>
+          </div>
+  
+          <br>
+  
+          <div class="row">
 
-        <div class="inputBox">
-          <input type="text" name="lastName" id="lastName" class="inputUser" required>
-          <label for="lastName" class="labelInput">Sobrenome:</label>
-        </div>
+            <div class="col-md-8">
+              <div class="inputBox">
+                <input type="text" name="email" id="email" class="inputUser" required>
+                <label for="email" class="labelInput">Email:</label>
+              </div>
+            </div>
 
-        <br><br>
+            <div class="col-md-4">
+              <div class="inputBox inputBox-Dt">
+                <label for="dtNasc" class="labelSelect lblDt">Data de nascimento:</label>
+                <input type="date" name="dtNasc" class="inputUser" id="dtNasc">
+              </div>
+            </div>
 
-        <div class="inputBox">
-          <input type="text" name="email" id="email" class="inputUser" required>
-          <label for="email" class="labelInput">Email:</label>
-        </div>
+          </div>
+          
+          <br>
+          
+          <div class="row">
+            
+            <div class="col-md-6">
+              <div class="inputBox">
+                <input type="text" name="cpf" id="cpf" class="inputUser" pattern="^[0-9]{3}.?[0-9]{3}.?[0-9]{3}-?[0-9]{2}" required>
+                <label for="cpf" class="labelInput">CPF:</label>
+              </div>
+            </div>
+            
+            <div class="col-md-6">
+              <div class="inputBox selectBox">
+                <label for="genero" class="labelSelect">Gênero:</label>
+                <select name="genero" id="genero" class="inputUser">
+                  <option value=""></option>
+                  <option value="M">Masculino</option>
+                  <option value="F">Feminino</option>
+                </select>
+              </div>
+            </div>
+            
+          </div>
 
-        <br><br>
+          <br>
+  
+          <div class="inputBox">
+            <input type="password" name="senha" id="senha" class="inputUser" required>
+            <label for="senha" class="labelInput lblPass">Senha:</label>
+          </div>
+  
+          <br>
+  
+          <div class="inputBox">
+            <input type="password" name="ConfSenha" id="ConfSenha" class="inputUser" required>
+            <label for="ConfSenha" class="labelInput lblPass">Confirme a senha:</label>
+          </div>
 
-        <div class="inputBox">
-          <input type="password" name="senha" id="senha" class="inputUser" required>
-          <label for="senha" class="labelInput">Senha:</label>
-        </div>
+          <ul id="verificacao">
+            <li id="senhasIguais"><span class="description">As senhas devem ser idênticas</span></li>
+            <li id="caracteres"><span class="description">A sua senha deve ter entre 8 e 30 caracteres</span></li>
+            <li id=""><span class="description">A sua senha deve ter entre 8 e 30 caracteres</span></li>
+          </ul>
+  
+          <a href="login.html" class="btn semCadastro">Entrar</a>
+  
+          <br>
+  
+          <input type="submit" value="Cadastrar" class="botao" disabled>
+  
+        </fieldset>
+      </form>
+    </div>
 
-        <br><br>
+    <div class="col-md-5 img-container">
+      <a href="index.php" id="btnCadastro"><img src="imgs/cadastro-img.svg" alt="img cadastro" width="320"></a>
+    </div>
 
-        <div class="inputBox">
-          <input type="password" name="ConfSenha" id="ConfSenha" class="inputUser" required>
-          <label for="ConfSenha" class="labelInput">Confirme a senha:</label>
-        </div>
+  </div>
 
-        <br><br>
-
-        <div class="inputBox">
-          <input type="text" name="cpf" id="cpf" class="inputUser" pattern="^[0-9]{3}.?[0-9]{3}.?[0-9]{3}-?[0-9]{2}" required>
-          <label for="cpf" class="labelInput">CPF:</label>
-        </div>
-
-        <br><br>
-
-        <div class="inputBox selectBox">
-          <label for="genero" class="labelSelect">Gênero:</label>
-          <select name="genero" id="genero" class="inputUser">
-            <option value=""></option>
-            <option value="M">Masculino</option>
-            <option value="F">Feminino</option>
-          </select>
-        </div>
-
-        <div class="inputBox">
-          <label for="dtNasc" class="labelSelect lblDt">Data de nascimento:</label>
-          <input type="date" name="dtNasc" class="inputUser" id="dtNasc">
-        </div>
-
-        <br>
-
-        <p class="semCadastro">Já tem uma conta? <a href="login.html">Entrar</a></p>
-
-        <br>
-
-        <input type="submit" class="botao">
-
-      </fieldset>
-    </form>
-  </div><!-- Fim base -->
-
+  <script src="js/script.js"></script>
 
 </body>
 </html>

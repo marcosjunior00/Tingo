@@ -1,3 +1,9 @@
+:root {
+  --bg: #EDF1F6;
+  --purple1: #1C1559;
+  --purple2: #b678e6;
+}
+
 html,
 body {
   overflow-x: hidden;
@@ -5,17 +11,15 @@ body {
 }
 
 body {
-  background: url(../imgs/fundo\ azulnovo.png);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg);
 }
 
 /* ----- Header ----- */
 header {
+  background-color: #fff;
+  color: var(--purple1);
   position: fixed;
-  background: #01154D;
   width: 100%;
   padding: 15px 0;
   top: 0;
@@ -23,8 +27,8 @@ header {
 }
 
 .barra {
-  width: 1px;
-  background-color: #fff;
+  width: 2;
+  background-color: var(--purple1);
   margin: 11px 15px;
 }
 
@@ -34,11 +38,11 @@ header {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #fff;
+  color: var(--purple1);
 }
 
 .navbar-light .navbar-nav .nav-link .icon-nav {
-  color: #fff;
+  color: var(--purple1);
 }
 
 .navbar-light .navbar-nav .nav-link .fa-cart-shopping:hover {
@@ -51,8 +55,8 @@ header {
 
 
 button.navbar-toggler {
-  border: none;
-  outline: none;
+  border: 1px solid var(--bg);
+  outline: 1px solid var(--bg);
 }
 
 /* ----- Capa ----- */
@@ -65,7 +69,7 @@ button.navbar-toggler {
 }
 
 .custom-button {
-  color: white;
+  color: #fff;
   border-radius: 400px;
   -webkit-border-radius: 400px;
   -moz-border-radius: 400px;
@@ -84,17 +88,17 @@ button.navbar-toggler {
 }
 
 .white-btn {
-  border: 2px solid #010142;
-  color: #010142
+  border: 2px solid var(--purple1);
+  color: var(--purple1);
 }
 
 .carousel-control {
-  color: #010142;
+  color: var(--purple1);
   font-size: 3rem;
 }
 
 .white-btn:hover {
-  background: #010142;
+  background: var(--purple1);
   color: #fff;
 }
 
@@ -110,7 +114,7 @@ button.navbar-toggler {
 }
 
 #servicos h2 {
-  color: #330D80;
+  color: var(--purple1);
 }
 
 #servicos img {
@@ -158,8 +162,8 @@ footer img#logo {
 }
 
 #rodape .navbar-nav a:hover {
-  color: #7D58C7;
-  text-decoration: none;
+  color: var(--purple2);
+  text-decoration: 1px solid var(--bg);
 }
 
 /* ------- Tipografia ------- */
@@ -175,7 +179,7 @@ h2 {
   font-size: 3em;
   font-weight: 700;
   letter-spacing: -0.04;
-  color: #010142;
+  color: var(--purple1);
 }
 
 h3 {
@@ -188,16 +192,6 @@ h4 {
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: -0.2;
-}
-
-/* ------- Cadastro ------- */
-
-#cadastro .base {
-  margin-top: 40%;
-}
-
-.lblDt {
-  padding-top: 35px;
 }
 
 /* ------- Produtos ------- */
@@ -213,7 +207,7 @@ h4 {
 }
 
 .product-container:hover {
-  background-color: #01154D;
+  background-color: var(--purple1);
   border-radius: 5px;
   color: #fff;
 }
@@ -224,4 +218,149 @@ h4 {
 
 .description {
   font-size: small;
+}
+
+/* -------------------- Form Login / Cadastro -------------------- */
+
+#cadastro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 500;
+  font-size: xx-large;
+}
+
+input {
+  margin-bottom: 5px;
+}
+
+.inputUser {
+  border: 1px solid var(--bg);
+  background: var(--bg);
+  border-bottom: 2px solid #000;
+  outline: 1px solid var(--bg);
+  color: #000;
+  font-size: 20px;
+  width: 100%;
+  letter-spacing: 1px;
+}
+
+.inputBox {
+  position: relative;
+}
+
+.labelInput {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  pointer-events: 1px solid var(--bg);
+  transition: 0.5s;
+}
+
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput {
+  top: -20px;
+  font-size: 12px;
+  color: var(--purple1);
+}
+
+.nomes-inputs {
+  margin-top: 10px;
+}
+
+.selectBox {
+  margin-top: -15px;
+}
+
+.labelSelect {
+  margin-bottom: -0.5px;
+  font-size: small;
+}
+
+.lblDt {
+  font-size: small;
+}
+
+.inputBox-Dt {
+  margin-top: -25px;
+}
+
+option {
+  background-color: var(--bg);
+}
+
+option:hover {
+  background-color: var(--bg);
+  transition: .4s;
+}
+
+a {
+  color: var(--purple1);
+  transition: 0.4s;
+}
+
+.semCadastro {
+  width: 100%;
+  color: var(--purple1);
+  background-color: var(--bg);
+  border-radius: 5px;
+  border: 1px solid var(--bg);
+  padding: 6px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.semCadastro:hover {
+  border: 1px solid var(--purple1);
+  text-decoration: 1px solid var(--bg);
+  color: var(--purple1);
+}
+
+.botao {
+  width: 100%;
+  color: var(--purple1);
+  background-color: var(--purple2);
+  border: 1px solid var(--bg);
+  border-radius: 5px;
+  padding: 6px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.btnCadastro:disabled,
+.btnCadastro:disabled:hover {
+  background-color: var(--purple2);
+  color: var(--bg);
+}
+
+#senha:invalid,
+#ConfSenha:invalid {
+  border-bottom: 2px solid red;
+}
+
+#ConfSenha:invalid ~ .lblPass,
+#senha:invalid ~ .lblPass {
+  color: red;
+}
+
+.botao:hover {
+  color: #fff;
+  background-color: var(--purple1);
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+ul#verificacao {
+  color: red;
 }

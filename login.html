@@ -14,50 +14,71 @@
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
   <!-- Folha de estilos personalizada -->
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/style-form.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <!-- Fontawesome -->
   <link rel="stylesheet" href="fontawesome/css/all.css">
   <link rel="stylesheet" href="fontawesome/css/brands.css">
 
   <title>Login - Tingo</title>
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .cont-esq, .cont-dir {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+  
 </head>
 
 <body id="login">
 
-  <a href="index.php"><img src="imgs/logo.png" alt="Tingo" class="logo-form"></a>
+  <div class="row container">
+    
+    <div class="col-md-6 cont-esq">
+      
+      <a href="index.php"><img src="imgs/account-img.svg" alt="Tingo" class="logo" width="500"></a>
+      
+    </div>
+    
+    <div class="col-md-6 cont-dir">
+      <form action="login.php" method="GET">
+        <a>
+  
+          <h3>Faça seu login</h3>
+  
+          <div class="inputBox">
+            <input type="text" name="email" id="email" class="inputUser" required>
+            <label for="nome" class="labelInput">Email:</label>
+          </div>
+  
+          <br>
+  
+          <div class="inputBox">
+            <input type="password" name="senha" id="senha" class="inputUser" required>
+            <label for="senha" class="labelInput">Senha:</label>
+          </div>
+  
+          <br>
+  
+          <a href="cadastro.html" class="btn semCadastro">Cadastre-se</a>
+  
+          <br>
+  
+          <input type="submit" class="botao">
+  
+        </fieldset>
+      </form>
+    </div>
 
-  <div class="base"><!-- Início base -->
-    <form action="login.php" method="GET">
-      <fieldset>
-
-        <h3>Faça seu login</h3>
-
-        <div class="inputBox">
-          <input type="text" name="email" id="email" class="inputUser" required>
-          <label for="nome" class="labelInput">Email:</label>
-        </div>
-
-        <br><br>
-
-        <div class="inputBox">
-          <input type="password" name="senha" id="senha" class="inputUser" required>
-          <label for="senha" class="labelInput">Senha:</label>
-        </div>
-
-        <br>
-
-        <p class="semCadastro">Não tem login? <a href="cadastro.html">Inscreva-se</a></p>
-
-        <br>
-
-        <input type="submit" class="botao">
-
-      </fieldset>
-    </form>
-  </div><!-- Fim base -->
-
+  </div>
 
 </body>
 
