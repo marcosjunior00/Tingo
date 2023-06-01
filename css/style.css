@@ -27,7 +27,7 @@ header {
 }
 
 .barra {
-  width: 2;
+  width: 1px;
   background-color: var(--purple1);
   margin: 11px 15px;
 }
@@ -340,13 +340,13 @@ a {
   color: var(--bg);
 }
 
-#senha:invalid,
+#inpSenha:invalid,
 #ConfSenha:invalid {
   border-bottom: 2px solid red;
 }
 
 #ConfSenha:invalid ~ .lblPass,
-#senha:invalid ~ .lblPass {
+#inpSenha:invalid ~ .lblPass {
   color: red;
 }
 
