@@ -1,7 +1,10 @@
 :root {
   --bg: #EDF1F6;
+  --bgTop: linear-gradient(to top right, #7EE6E7, #FFF);
+  --bgBottom: linear-gradient(to bottom left, #7EE6E7, #FFF);
   --purple1: #1C1559;
   --purple2: #b678e6;
+  --blue: #7EE6E7;
 }
 
 html,
@@ -12,13 +15,14 @@ body {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: var(--bg);
+  background-image: var(--bgTop);
 }
 
 /* ----- Header ----- */
 header {
-  background-color: #fff;
   color: var(--purple1);
+  font-size: 17px;
+  font-weight: 100;
   position: fixed;
   width: 100%;
   padding: 15px 0;
@@ -39,18 +43,24 @@ header {
 
 .navbar-light .navbar-nav .nav-link {
   color: var(--purple1);
+  padding-bottom: 2px;
+  transition: border .4s;
 }
 
 .navbar-light .navbar-nav .nav-link .icon-nav {
   color: var(--purple1);
+  padding-bottom: 0px;
+  transition: border .4s;
 }
 
-.navbar-light .navbar-nav .nav-link .fa-cart-shopping:hover {
-  color: #5DE888;
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:active {
+  border-bottom: 1px solid var(--purple1);
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
-  color: #5DE888;
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:active {
+  border-bottom: 1px solid var(--purple1);
 }
 
 
@@ -62,6 +72,11 @@ button.navbar-toggler {
 /* ----- Capa ----- */
 #home {
   margin-top: 20%;
+}
+
+#home h1 {
+  font-size: 4rem;
+  font-weight: 100;
 }
 
 .capa {
@@ -76,6 +91,26 @@ button.navbar-toggler {
   text-transform: uppercase;
   transition: background 0.4s, color 0.4s;
   padding: 10px 20px;
+}
+
+.btn-home {
+  color: var(--purple1);
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 400px;
+  -webkit-border-radius: 400px;
+  -moz-border-radius: 400px;
+  box-shadow: 2px 1px 2px 2px #80a0a8;
+  -webkit-box-shadow: 2px 1px 2px 2px #80a0a8;
+  -moz-box-shadow: 2px 1px 2px 2px #80a0a8;
+  transition: .4s;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn-home:hover {
+  background-color: #bee8f3;
+  border: 1px solid #bee8f3;
 }
 
 .purple-btn {
@@ -163,7 +198,6 @@ footer img#logo {
 
 #rodape .navbar-nav a:hover {
   color: var(--purple2);
-  text-decoration: 1px solid var(--bg);
 }
 
 /* ------- Tipografia ------- */
@@ -241,9 +275,10 @@ input {
 
 .inputUser {
   border: 1px solid var(--bg);
-  background: var(--bg);
+  background: transparent;
+  border: none;
   border-bottom: 2px solid #000;
-  outline: 1px solid var(--bg);
+  outline: none;
   color: #000;
   font-size: 20px;
   width: 100%;
@@ -259,6 +294,7 @@ input {
   top: 0px;
   left: 0px;
   pointer-events: 1px solid var(--bg);
+  cursor: text;
   transition: 0.5s;
 }
 
@@ -307,9 +343,7 @@ a {
 .semCadastro {
   width: 100%;
   color: var(--purple1);
-  background-color: var(--bg);
   border-radius: 5px;
-  border: 1px solid var(--bg);
   padding: 6px;
   margin-bottom: 5px;
   cursor: pointer;

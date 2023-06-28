@@ -18,13 +18,13 @@
   <link rel="stylesheet" href="fontawesome/css/brands.css">
 
   <!-- Folha de estilos personalizada -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
 
   <title>Tingo</title>
 
   <?php
 
-    include 'login.php';
+    include './backend/login.php';
 
   ?>
 
@@ -49,7 +49,7 @@
 
           <div class="collapse navbar-collapse" id="nav-principal">
             <ul class="navbar-nav ml-auto text-white">
-              <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="index.php" class="nav-link" active>Home</a></li>
               <li class="nav-item"><a href="pages/products.php" class="nav-link">Produtos</a></li>
               <li class="nav-item"><a href="pages/more.php" class="nav-link">Saiba mais</a></li>
 
@@ -66,7 +66,7 @@
                   else 
                   {
                     session_destroy();
-                    echo '<a href="login.html" class="nav-link"><span class="login"><i class="fa-solid fa-user"></i></span></a>';
+                    echo '<a href="./pages/login.html" class="nav-link"><span class="login"><i class="fa-solid fa-user"></i></span></a>';
                   }
                 ?>
               </li>
@@ -82,9 +82,9 @@
     </header><!--/ Fim header -->
 
     <section id="home" class="d-flex"><!-- Início home -->
-      <div class="container align-self-center">
+      <div class="container align-self-center d-flex">
 
-        <div class="carousel slide" data-ride="carousel" id="carousel-capa">
+        <!-- <div class="carousel slide" data-ride="carousel" id="carousel-capa">
 
           <div class="carousel-inner">
 
@@ -124,6 +124,15 @@
             <span class="carousel-control">></span>
           </a>
 
+        </div> -->
+
+        <div class="col-md-6">
+          <h1>Tingo - seu companheiro diário.</h1>
+          
+          <button class="btn-home" value="compre agora">compre agora <i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+
+        <div class="col-md-6">
         </div>
 
       </div>
