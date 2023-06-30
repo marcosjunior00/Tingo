@@ -84,6 +84,7 @@
     <section id="home" class="d-flex"><!-- Início home -->
       <div class="container align-self-center d-flex">
 
+        <!-- Inicio carrousel slide -->
         <!-- <div class="carousel slide" data-ride="carousel" id="carousel-capa">
 
           <div class="carousel-inner">
@@ -133,6 +134,10 @@
         </div>
 
         <div class="col-md-6">
+        </div>
+
+        <div class="col-md-6 cont-img-home">
+          <img src="./imgs/imgHome.png" width="250" id="img_cell">
         </div>
 
       </div>

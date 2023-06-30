@@ -141,6 +141,12 @@ button.navbar-toggler {
   color: #000;
 }
 
+#img_cell {
+  margin-left: -350px;
+  margin-top: -100px;
+  transform: rotate(25deg);
+}
+
 /* ------- Servicos ------- */
 #servicos {
   margin-top: 25rem;
@@ -360,18 +366,12 @@ a {
   width: 100%;
   color: var(--purple1);
   background-color: var(--purple2);
-  border: 1px solid var(--bg);
+  border: 1px solid var(--purple2);
   border-radius: 5px;
   padding: 6px;
   margin-bottom: 5px;
   cursor: pointer;
   transition: .5s;
-}
-
-.btnCadastro:disabled,
-.btnCadastro:disabled:hover {
-  background-color: var(--purple2);
-  color: var(--bg);
 }
 
 #inpSenha:invalid,
