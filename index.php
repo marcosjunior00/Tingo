@@ -226,7 +226,7 @@
 
         </div> -->
   </div>
-  </section>
+  </section> 
 
   <footer id="rodape">
     <div class="container">
@@ -282,7 +282,7 @@
             </li>
           </ul>
         </div>
-
+ 
       </div>
     </div>
   </footer>
