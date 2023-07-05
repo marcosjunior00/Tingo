@@ -16,7 +16,7 @@
   <!-- Fontawesome -->
   <link rel="stylesheet" href="fontawesome/css/all.css">
   <link rel="stylesheet" href="fontawesome/css/brands.css">
-
+ 
   <!-- Folha de estilos personalizada -->
   <link rel="stylesheet" href="./css/style.css">
 
