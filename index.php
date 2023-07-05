@@ -12,7 +12,7 @@
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">
-
+ 
   <!-- Fontawesome -->
   <link rel="stylesheet" href="fontawesome/css/all.css">
   <link rel="stylesheet" href="fontawesome/css/brands.css">
