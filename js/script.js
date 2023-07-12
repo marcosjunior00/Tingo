@@ -51,3 +51,15 @@ function verifyErrors() {
     btn_cadastro.style.backgroundColor = "#b678e6";
   }
 }
+
+window.onscroll = function () {
+  scrollfunction();
+};
+
+function scrollfunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("btnScrollToTop").classList.add("");
+  } else {
+    document.getElementById("btnScrollToTop").classList.add("disabled");
+  }
+}
