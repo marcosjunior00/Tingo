@@ -43,9 +43,9 @@ function verifyErrors() {
 
   // Verificar se há alguma requisição faltante
   if (senhasIguais == false || lengthSenha == false || disabled == true) {
-    return alert("Respeite as requisições da senha!");
     btn_cadastro.style.disabled = true;
     btn_cadastro.style.backgroundColor = "#D6D6D6";
+    return alert("Respeite as requisições da senha!");
   } else {
     btn_cadastro.style.disabled = false;
     btn_cadastro.style.backgroundColor = "#b678e6";

@@ -83,50 +83,6 @@
 
     <section id="home" class="d-flex"><!-- Início home -->
       <div class="container align-self-center d-flex">
-
-        <!-- Inicio carrousel slide -->
-        <!-- <div class="carousel slide" data-ride="carousel" id="carousel-capa">
-
-          <div class="carousel-inner">
-
-            <div class="carousel-item active">
-              <div class="row">
-                <div class="col-md-12 capa">
-
-                  <h1 class="display-1">Adquira seu Tingo</h1>
-
-                  <a href="" class="btn btn-lg custom-button white-btn">Compre já <i
-                      class="fa-solid fa-cart-shopping"></i></a>
-
-                </div>
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-md-12 capa">
-
-                  <h1 class="display-1">Baixe o aplicativo!</h1>
-
-                  <a href="" class="btn btn-lg custom-button white-btn">Fazer download</a>
-
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <a href="#carousel-capa" class="carousel-control-prev" data-slide="prev">
-            <span class="carousel-control">
-              < </span>
-          </a>
-
-          <a href="#carousel-capa" class="carousel-control-next" data-slide="next">
-            <span class="carousel-control">></span>
-          </a>
-
-        </div> -->
-
         <div class="col-md-6">
           <h1>Tingo - seu companheiro diário.</h1>
           
@@ -198,96 +154,71 @@
           </div>
         </div>
       </div>
+    </section> 
 
-      <!-- <div class="container">
+    <footer id="rodape">
+      <div class="container">
         <div class="row">
 
-          <div class="col-md-4">
+          <div class="col-md-1">
+            .
+          </div>
 
-            <h2>Uso facilitado</h2>
+          <div class="col-md-2">
+            <img src="imgs/logo.png" alt="logo" id="logo">
+          </div>
 
-            <br>
+          <div class="col-md-2">
 
-            <h4>Manual de uso</h4>
-            <p>Nós oferecemos para o usuário, um manual para mausear seu Tingo de maneira correta!</p>
-
-            <br>
-
-            <h4>Design simples</h4>
-            <p>Nossos serviços tem um design simples e atrativo para o usuário conseguir navegar com facilidade</p>
-
-            <br>
-
-            <h4>Controle de bateria</h4>
-            <p>O aplicativo oferece uma interface que disponibiliza para o usuário acessar a bateria de seu Tingo a
-              qualquer momento e qualquer hora pelo seu SmartPhone</p>
+            <h4>company</h4>
+            <ul class="navbar-nav">
+              <li><a href="">Sobre</a></li>
+              <li><a href="">Novidades</a></li>
+            </ul>
 
           </div>
 
-        </div> -->
-  </div>
-  </section> 
+          <div class="col-md-2">
 
-  <footer id="rodape">
-    <div class="container">
-      <div class="row">
+            <h4>comunidade</h4>
+            <ul class="navbar-nav">
+              <li><a href="">Grupo no telegram</a></li>
+              <li><a href="">Desenvolvedores</a></li>
+              <li><a href="">Manual do usuário</a></li>
+            </ul>
 
-        <div class="col-md-1">
-          .
-        </div>
+          </div>
 
-        <div class="col-md-2">
-          <img src="imgs/logo.png" alt="logo" id="logo">
-        </div>
+          <div class="col-md-2">
 
-        <div class="col-md-2">
+            <h4>contato</h4>
+            <ul class="navbar-nav">
+              <li><a href="">Reclame aqui</a></li>
+              <li><a href="">Avaliações na PlayStore</a></li>
+              <li><a href="">Telefone</a></li>
+            </ul>
 
-          <h4>company</h4>
-          <ul class="navbar-nav">
-            <li><a href="">Sobre</a></li>
-            <li><a href="">Novidades</a></li>
-          </ul>
+          </div>
 
-        </div>
-
-        <div class="col-md-2">
-
-          <h4>comunidade</h4>
-          <ul class="navbar-nav">
-            <li><a href="">Grupo no telegram</a></li>
-            <li><a href="">Desenvolvedores</a></li>
-            <li><a href="">Manual do usuário</a></li>
-          </ul>
+          <div class="col-md-3 d-flex flex-column">
+            <h4>redes sociais</h4>
+            <ul class="navbar-nav">
+              <li>
+                <a href="instagram.com"><img src="imgs/instagram.png" alt="Instagram"></a>
+                <a href="www.facebook.com"><img src="imgs/facebook.png" alt="Facebook"></a>
+                <a href="www.twitter.com"><img src="imgs/twitter.png" alt="Twitter"></a>
+              </li>
+            </ul>
+          </div>
 
         </div>
-
-        <div class="col-md-2">
-
-          <h4>contato</h4>
-          <ul class="navbar-nav">
-            <li><a href="">Reclame aqui</a></li>
-            <li><a href="">Avaliações na PlayStore</a></li>
-            <li><a href="">Telefone</a></li>
-          </ul>
-
-        </div>
-
-        <div class="col-md-3 d-flex flex-column">
-          <h4>redes sociais</h4>
-          <ul class="navbar-nav">
-            <li>
-              <a href="instagram.com"><img src="imgs/instagram.png" alt="Instagram"></a>
-              <a href="www.facebook.com"><img src="imgs/facebook.png" alt="Facebook"></a>
-              <a href="www.twitter.com"><img src="imgs/twitter.png" alt="Twitter"></a>
-            </li>
-          </ul>
-        </div>
-
       </div>
-    </div>
-  </footer>
-
+    </footer>
   </div>
+
+  <button id="btnScrollToTop">
+    <i class="fa-solid fa-arrow-up" style="color: #1c1559;"></i>
+  </button>
 
   <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

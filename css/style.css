@@ -18,6 +18,28 @@ body {
   background-image: var(--bgTop);
 }
 
+#btnScrollToTop {
+  position: fixed;
+  bottom: 15px;
+  right: 35px;
+  padding: 3px 10px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 1px 2px 10px #aaa;
+  background-color: #fff;
+  transition: .2s;
+  cursor: pointer;
+
+  &.disabled {
+    transform: translate(150%, 0);
+  }
+
+  &:hover {
+    background-color: #efe;
+    box-shadow: 1px 2px 10px #888;
+  }
+}
+
 /* ----- Header ----- */
 header {
   color: var(--purple1);
