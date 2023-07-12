@@ -20,7 +20,7 @@
             header('Location: ../index.php');
         } else if (isset($_SESSION['email'])) {
             echo '<h1>Profile</h1>';
-            echo '<a href="../logout.php">Sair</a>';
+            echo '<a href="../backend/logout.php">Sair</a>';
         }
     ?>
 </body>

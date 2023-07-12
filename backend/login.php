@@ -24,14 +24,15 @@
         // Compara a senha fornecida pelo usuário com a senha do usuário no banco de dados
         if ($senha != $row['senha']) {
             echo "<script>alert('senha errada')</script>";
+            header('Refresh: .5; url=../pages/login.html');
         } 
         else {
             $_SESSION['email'] = $email;
             $_SESSION['nome'] = $row['nome'];
-            header('Location: index.php');
+            header('Location: ../index.php');
         }
-    } else {
-        echo "<script>alert('email errado')</script>";
+    } else if ($email && $senha) {
+        header('Location: ../pages/login.html');
     }
 
     // Fecha a conexão com o banco de dados
